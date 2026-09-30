@@ -1,18 +1,33 @@
-/* CSS: 부모에게 flex 지시 */
-.container {
+/* 전체 배경색 살짝 주기 */
+body {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* 제목 색상 포인트 주기 */
+  h1 {
+    color: #333333;
+  }
+  
+  /* Flexbox 정렬 및 박스들 간격 주기 */
+  .container {
     display: flex;
     justify-content: center;
     gap: 12px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row; /* 기본: 가로로 나란히 */
-    gap: 12px;
+    margin-top: 20px;
   }
   
-  @media (max-width: 600px) {
-    .container {
-      flex-direction: column; /* 화면이 좁아지면 세로로 */
-    }
+  /* 각 박스에 예쁜 배경색과 테두리 넣기 */
+  .container div {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px 20px;
+    border-radius: 6px;
   }
+
+/* 반응형 웹: 화면 너비가 600px 이하일 때 세로로 배치 */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
