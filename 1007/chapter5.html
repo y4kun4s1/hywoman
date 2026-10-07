@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        .title1 {
+            color: rgb(214, 50, 50);
+            background-color: rgb(219, 218, 216);
+    }
+        .p2 { color: red; }
+        
+        h1.title2 { color: orange; }
+        .p1 { color: blue; }
+
+        #header {
+ 	   width: 800px; margin: 0 auto;
+ 	   background: rgb(220, 144, 144);
+       color: black;
+    }
+ 	    #wrap {
+ 	   width: 800px; margin: 0 auto;
+ 	   overflow: hidden;
+       color: black;
+    }
+ 	    #aside {
+ 	   width: 200px; float: left;
+ 	   background: rgb(157, 157, 231);
+       color: black;
+    }
+        #content {
+ 	   width: 600px; float: left;
+ 	   background: rgb(165, 232, 165);
+       color: black;
+    }
+
+    #rint { color: rgb(138, 59, 59); }
+
+    .select { color: red; }
+    .nots {color: black;}
+
+    .item { color: skyblue; }
+ 	.header { background-color: lightgoldenrodyellow; }
+
+    input[type="text"] { background: lightyellow; }
+	input[type="password"] { background: lightblue; }
+
+    #header1 h1 { color: skyblue; }
+ 	#section1 h1 { color: orange; }
+
+    .hovertext1:hover { color: red; }
+ 	.hovertext1:active { color: blue; }
+
+    /* input 태그가 사용 가능할 때
+     background-color 속성에 white 키워드를 적용합니다. */
+    input:enabled { background-color: white; }
+    /* input 태그가 사용 불가능할 때
+        background-color 속성에 gray 키워드를 적용합니다. */
+    input:disabled { background-color: gray; }
+    /* input 태그에 포커스를 맞출 때
+        background-color 속성에 orange 키워드를 적용합니다. */
+    input:focus { background-color: orange; }
+
+</style>
+</head>
+<body>
+    <h1 class="title1">CSS3 선택자 기본</h1>
+
+    <h2>제목 글자</h2>
+    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+    <h1 class="title2">제목 글자</h1>
+    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="p1">Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p>
+
+    <div id="header">
+      <h1>#header 태그</h1>
+   </div>
+   <div id="wrap">
+      <div id="aside">
+         <h1>#aside 태그</h1>
+      </div>
+      <div id="content">
+         <h1>#content 태그</h1>
+      </div>
+   </div>
+
+   <h1 id="rint">CSS3 선택자 기본</h1>
+    <h2 id="rint">CSS3 선택자 기본</h2>
+    <h3 id="rint">CSS3 선택자 기본</h3>
+    <ul>
+        <li class="select">사과</li>
+ 	    <li class="nots">바나나</li>
+ 	    <li class="select">오렌지</li>
+ 	    <li class="nots">감</li>
+    </ul>
+
+    <h1 class="item header">동해물과 백두산이</h1> 
+
+    <form>
+ 	    <input type="text">
+ 	    <input type="password">
+    </form>
+
+    <div>
+        <h1>CSS3 선택자 기본</h1>
+        <h2>기본 선택자</h2>
+        <ul>
+         <li>전체 선택자</li>
+         <li>태그 선택자</li>
+         <li>아이디 선택자와 클래스 선택자</li>
+        </ul>
+   </div>
+
+   <div id="header1">
+ 	<h1 class="title">Lorem ipsum</h1>
+ 	<div id="nav">
+ 	   <h1>Navigation</h1>
+ 	</div>
+
+    </div>
+    <div id="section1">
+         <h1 class="title">Lorem ipsum</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <table border="1">
+       <tr>
+ 	<th>이름</th>
+ 	<th>지역</th>
+       </tr>
+       <tr>
+ 	<td>정지수</td>
+ 	<td>서울특별시 강서구 내발산동</td>
+       </tr>
+    </table>
+
+    <h1 class="hovertext1">반응 선택자</h1>
+    
+    <h2>사용 가능</h2>
+    <input>
+    <h2>사용 불가능</h2>
+    <input disabled="disabled">
+
+</body>
+</html>
